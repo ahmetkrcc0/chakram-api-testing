@@ -1,6 +1,6 @@
 const chakram = require('chakram'),
     expect = chakram.expect;
-//i
+
 describe("User Tests", function () {
 
     it("GET /v2/user/{userName}", function () {
