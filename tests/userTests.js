@@ -7,6 +7,8 @@ describe("User Tests", function () {
         const response = chakram.get("https://petstore.swagger.io/v2/user/testqa1234");
         expect(response).to.have.status(200);
         return chakram.wait();
+        
+        
     });
 
     it("GET /v2/user/logout", function () {
@@ -23,20 +25,20 @@ describe("User Tests", function () {
 
     it("POST /v2/user userCreate", function () {
         const data = {
-            "id": 231213123321,
-            "username": "testcan123",
-            "firstName": "test",
-            "lastName": "can",
-            "email": "test@can.com",
-            "password": "123",
-            "phone": "213123321231",
+            "id": 123,
+            "username": "ahmet123",
+            "firstName": "ahmet",
+            "lastName": "karci",
+            "email": "karci@otlook.com",
+            "password": "as21",
+            "phone": "529131231",
             "userStatus": 0
           };
 
           const resData = {
             "code": 200,
             "type": "unknown",
-            "message": "231213123321"
+            "message": "1111111"
           };
 
         const response = chakram.post("https://petstore.swagger.io/v2/user", data);
@@ -50,13 +52,13 @@ describe("User Tests", function () {
 
     it("PUT /v2/user userUpdate", function () {
         const data = {
-            "id": 123321231132231,
-            "username": "teset",
-            "firstName": "test",
-            "lastName": "ste",
-            "email": "2312321@test.com",
-            "password": "123",
-            "phone": "34432342342",
+            "id": 123123123,
+            "username": "krc",
+            "firstName": "ahmet",
+            "lastName": "karci",
+            "email": "kkarci@ottllk.com",
+            "password": "1111",
+            "phone": "5933222232",
             "userStatus": 0
           };
 
